@@ -1,0 +1,41 @@
+.article {
+    display: inline-block;
+    width: 100%;
+    &-thin {
+        width: 60%;
+        @include to(m) {
+            width: 90%;
+        }
+    }
+    &--img {
+        width: 200px;
+        height: auto;
+        padding: 20px 20px 20px 20px;
+        @include to(m) {
+            width: 150px;
+            padding: 10px 10px 10px 10px;
+        }
+        &-circular {
+            height: 200px;
+            border-radius: 50%;
+            @include to(m) {
+                height: 150px;
+            }
+        }
+        &-left {
+            float: left;
+        }
+        &-right {
+            float: right;
+        }
+    }
+    &--p {
+        width: 100%;
+        height: auto;
+        padding: 5px 5px 5px 5px;
+        text-align: left;
+    }
+    &--float-group::after {
+        clear: both;
+    }
+}

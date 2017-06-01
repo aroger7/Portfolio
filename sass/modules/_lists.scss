@@ -1,0 +1,22 @@
+.list {
+    display: block;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    &-row {
+        display: inline-block;
+        padding: 10px 10px 10px 10px;
+    }
+    &-row>&--item {
+        display: inline-block;
+    }
+    &--item {
+        padding: 10px 10px 10px 10px;
+    }
+    &.l-constrained {
+        width: 60%;
+    }
+    &-showcase>li {
+        display: inline-block;
+        padding: 10px 10px 10px 10px;
+    }
+}

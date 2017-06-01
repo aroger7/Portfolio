@@ -1,0 +1,6 @@
+.overlay {
+    @include transition(opacity 0.2s ease);
+    &:hover {
+        opacity: 1;
+    }
+}

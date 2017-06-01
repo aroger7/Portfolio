@@ -1,0 +1,39 @@
+.polaroid {
+    padding: 20px;
+    @include box-shadow(10px, 10px, 10px, 0px, $black);
+    border: 1px solid $grey;
+    width: 345px;
+    max-width: 345px;
+    position: initial;
+    text-align: center;
+    @include to(xs) {
+        width: 245px;
+        max-width: 245px;
+    }
+    &--overlay-group {
+        display: inline-block;
+        position: relative;
+    }
+    &--link {
+        display: inline;
+    }
+    &--image {
+        display: block;
+        width: 300px;
+        height: auto;
+        @include to(xs) {
+            width: 200px;
+        }
+    }
+    &--label {
+        text-align: center;
+        text-transform: uppercase;
+        padding: 5px 0px;
+    }
+    &--desc {
+        text-align: center;
+        font-style: italic;
+        padding: 5px 0px;
+        margin: 0px;
+    }
+}

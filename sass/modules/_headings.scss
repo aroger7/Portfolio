@@ -1,0 +1,47 @@
+.heading {
+    color: $black;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    &--title {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: $oswald;
+        font-size: 70px;
+        padding: 10px 0px;
+        @include to(xs) {
+            font-size: 50px;
+        }
+        &-light {
+            color: $white;
+        }
+        &-accent {
+            color: $orange;
+        }
+    }
+    &--subtitle {
+        text-transform: uppercase;
+        font-family: $oswald;
+        font: 40px;
+        padding: 10px 0px;
+        color: $black;
+        @include to(xs) {
+            font-size: 30px;
+        }
+        &-light {
+            color: $white;
+        }
+        &-accent {
+            color: $orange;
+        }
+    }
+    &--hr {
+        border: 3px solid $black;
+        width: 200px;
+        &-light {
+            border-color: $white;
+        }
+        &-accent {
+            border-color: $orange;
+        }
+    }
+}

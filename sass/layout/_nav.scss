@@ -1,0 +1,23 @@
+.nav {
+    //Bootstrap nav-item
+    &-item {
+        padding: 0px 0px 0px 0px;
+    }
+    //Bootstrap nav-link
+    &-link {
+        font-size: 14px;
+        line-height: 1.3;
+        font-family: $oswald;
+        text-transform: uppercase;
+    }
+    //Bootstrap navbar-toggler-icon
+    &bar-toggler-icon {
+        color: $link-color;
+    }
+    &bar-transparent {
+        background: transparent;
+        @include to(m) {
+            background-color: $white;
+        }
+    }
+}
